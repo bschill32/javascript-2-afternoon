@@ -14,14 +14,11 @@
   Then alert your name using dot notation.
 */
 
-let me = {
-  name: `Brendan`,
-  age: 29
+var me = {
+  name: "Brendan",
+  age: 28
 }
-
-// alert(me.name)
-
-//Code here
+// alert(me.name)//Code here
 
 
 
@@ -32,13 +29,13 @@ let me = {
   Have the values to those keys be your favorite thing in that category.
 */
 
-let favoriteThings = {
-  band: `band`,
-  food: `food`,
-  person: `person`,
-  book: `book`,
-  movie: `movie`,
-  holiday: `holiday`
+var favoriteThings = {
+  band: "band",
+  food: "food",
+  person: 'person',
+  book: 'book',
+  movie: 'movie',
+  holiday: 'holiday'
 }//Code here
 
 
@@ -47,8 +44,9 @@ let favoriteThings = {
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
-favoriteThings.car = `car`
-favoriteThings.brand = `brand`//Code here
+favoriteThings.car = "car";
+favoriteThings.brand = "brand";
+//Code here
 
 
 
@@ -56,8 +54,10 @@ favoriteThings.brand = `brand`//Code here
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-favoriteThings.food = `Chicken Nuggets`
-favoriteThings.book = `Harry Potter`//Code here
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = "Harry Potter" //Code here
+
+
 
 ////////// PROBLEM 3 //////////
 
@@ -69,11 +69,13 @@ favoriteThings.book = `Harry Potter`//Code here
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
 */
 
+var backPack = {
 
- let backPack = {}
- let item = `firstPocket`
- backPack[item] = `chapstick`
- backPack.color = `color`
+}
+var item = 'firstPocket';
+backPack[item] = "chapstick";
+backPack.color = "color";
+
  //Code here
 
 
@@ -82,8 +84,9 @@ favoriteThings.book = `Harry Potter`//Code here
   After you do the above, alert your entire backPack object.
 */
 
-// alert(backPack)
-//Code here
+// alert(backPack)//Code here
+
+
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -91,8 +94,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-console.log(`Backpack`,backPack)
-//Code here
+console.log(backPack)//Code here
 
 
 
@@ -115,8 +117,9 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-user2.name = 'Tyler S. McGinnis'
-user2.email = 'tyler.mcginnis@devmounta.in'
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
+
 //Code Here
 
 
@@ -140,7 +143,9 @@ user2.email = 'tyler.mcginnis@devmounta.in'
   Create an empty object called methodCollection.
 */
 
-//Code Here
+var methodCollection = {
+
+}//Code Here
 
 
 
@@ -149,7 +154,12 @@ user2.email = 'tyler.mcginnis@devmounta.in'
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
 
-
+methodCollection.alertHello = function(){
+  alert("hello");
+}
+methodCollection.logHello = function(){
+  console.log("hello");
+}
 //Code Here
 
 
@@ -171,7 +181,13 @@ user2.email = 'tyler.mcginnis@devmounta.in'
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
+function makePerson(name, birthday, ssn){
+  return {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+}//Code Here
 
 
 
@@ -182,6 +198,12 @@ user2.email = 'tyler.mcginnis@devmounta.in'
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+}//Code Here
 
 
